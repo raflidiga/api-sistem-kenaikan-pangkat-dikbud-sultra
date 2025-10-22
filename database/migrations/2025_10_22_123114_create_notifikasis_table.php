@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('notifikasis', function (Blueprint $table) {
             $table->id();
+            $table->integer('notifikasi');
             $table->text('pesan');
             $table->foreignId('users_id')->constrained('users')->onDelete('cascade');
             $table->timestamps();

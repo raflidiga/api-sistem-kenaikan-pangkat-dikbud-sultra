@@ -7,5 +7,8 @@ use Illuminate\Http\Request;
 
 class BerkasApiController extends Controller
 {
-    //
+    public function index()
+    {
+        $berkas = Berkas::all();
+    }
 }
