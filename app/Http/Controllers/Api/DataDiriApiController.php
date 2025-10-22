@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class BerkasController extends Controller
+class DataDiriApiController extends Controller
 {
     //
 }

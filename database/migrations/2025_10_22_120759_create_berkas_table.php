@@ -15,7 +15,12 @@ return new class extends Migration
             $table->id();
             $table->string('sk_cpns');
             $table->string('sk_pns');
-            $table->string('sk_pns');
+            $table->string('sk_gaji_berkala');
+            $table->string('sk_pangkat_terakhir');
+            $table->string('sk_jabatan');
+            $table->string('file_sk');
+            $table->foreignId('users_id')->constrained('users')->onDelete('cascade');
+            $table->foreignId('admins_id')->constrained('admins')->onDelete('cascade');
             $table->timestamps();
         });
     }
